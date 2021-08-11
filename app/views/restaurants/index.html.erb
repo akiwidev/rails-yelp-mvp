@@ -1,0 +1,12 @@
+<h1>Restaurants</h1>
+<ul>
+  <% @restaurants.each do |restaurant|%>
+    <div class="card-product">
+      <img src="https://unsplash.com/s/photos/restaurant/GXXYkSwndP4" />
+      <div class="card-product-infos">
+        <h2><%= restaurant.name %></h2>
+        <p><%= restaurant.category %></p>
+      </div>
+    </div>
+  <% end %>
+</ul>
